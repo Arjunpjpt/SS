@@ -1,5 +1,12 @@
+/*eslint-env browser*/
+
+"use strict";
+
+
 var cvs = document.getElementById("canvas");
 var ctx = cvs.getContext("2d");
+
+
 
 // load images I am here
 
@@ -19,7 +26,7 @@ bg.src = "images/bg.png";
 bard.src = "images/bardo.png";
 
 
-var gap = 150;
+//var gap = 150;
 //var constant = pipeN.height + gap;
 //console.log(constant);
 
@@ -29,56 +36,16 @@ var sheetX = 0;
 var sheetY = 0;
 
 var kidX = 100;
-var kidY =100;
+var kidY = 100;
 
-var gravity = 2;
 
-//draw Images
-
-function moveUp() {
-
-    sheetX += 45;
-    if(sheetX == 180) {
-        sheetX=0;
-    }
-    kidY -=speed;
-}
-
-function moveDown() {
-
-    sheetX += 45;
-
-    if(sheetX == 180) {
-        sheetX=0;
-    }
-    kidY +=speed;
-}
-
-function moveLeft() {
-
-    sheetX += 45;
-    if(sheetX == 180) {
-        sheetX=0;
-    }
-    kidX -=speed;
-}
-
-function moveRight() {
-
-    sheetX += 45;
-
-    if(sheetX == 180) {
-        sheetX=0;
-    }
-    kidX +=speed;
-}
 
 
 function moveForward(direction) {
 
     sheetX += 45;
 
-    if(sheetX == 180) {
+    if (sheetX == 180) {
         sheetX=0;
     }
 
